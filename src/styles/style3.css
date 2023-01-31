@@ -1,0 +1,205 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing: border-box; */
+    font-family: 'Comic Neue', cursive;
+    color: black;
+}
+
+:root {
+    --color1: rgb(255, 204, 0);
+    --color2: rgba(7, 168, 176, 0.788);
+    --back1: rgb(0, 167, 162);
+    --back2: rgb(255, 224, 99);
+    --back3: black;
+}
+
+h1 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    color: var(--color1);
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+nav {
+    position: absolute;
+    top: 2rem;
+    right: 14rem;
+}
+
+nav>a {
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid var(--color1);
+    background-color: var(--color2);
+    border-radius: 0.7rem;
+}
+
+a:hover {
+    color: var(--color2);
+    background-color: var(--color1);
+    border-radius: 0.5rem;
+    /* despus quitar este margin que da ilucion de animacion */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    /* top: 25rem; */
+}
+
+h2 {
+    color: white;
+    background-color: black;
+    margin: 0%;
+    padding: 1rem;
+    text-align: center;
+}
+
+main>article {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    background-color: var(--back2);
+    border-radius: 1rem;
+}
+
+article>h3,p {
+    margin: 2rem;
+    text-align: center;
+}
+
+aside {
+    position: relative;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    padding: 3rem;
+    justify-content: center;
+    background-color: var(--back2);
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.5rem;
+    border-top-style: solid;
+    /* top: 6rem; */
+}
+
+footer>div {
+    margin: 1rem;
+}
+
+h4 {
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    background: var(--color2);
+    border-radius: 0.5rem;
+    color: var(--color1);
+}
+
+a {
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    padding: 1rem;
+}
+
+input {
+    margin: 3rem;
+    width: 60%;
+    height: 8rem;
+    border-radius: 0.5rem;
+}
+
+button {
+    width: 5rem;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    color: var(--back1);
+    background-color: var(--color1);
+    border-radius: 0.5rem;
+}
+button:hover{
+    color: var(--back2);
+    background-color: var(--back1);
+}
+.fondo {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.logo {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    /* background-color: var(--color1); */
+    /* border-radius: 1rem; */
+}
+
+.imagen_A {
+    object-fit: contain;
+    width: 30%;
+    margin-left: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    /* top: 6.5rem;
+    left: 6rem; */
+    background-color: var(--color1);
+}
+
+.home {
+    padding-left: 20rem;
+}
+
+#pieAbout {
+    position: relative;
+    /* top: 24rem; */
+}
+
+#pieContacto {
+    position: relative;
+    /* top: 16rem; */
+}
+
+.contact {
+    text-align: center;
+    padding-left: 24rem;
+}
+.AboutS3{
+    color: white;
+    background-color: black;
+    margin: 0%;
+    padding: 1rem;
+    text-align: center;
+}
+.mod1, .mod2{
+    display: none;
+}
