@@ -1,4 +1,5 @@
-# Task2-InitialWebite
+# Task 3-Present Data in Lists and Tables
 
-Continuacion de la primera actividad para el curso de Front-End de MindHub. Aqui ya nos encontramos con el agregado de estilos mediante css basico.
-El repositorio se ira actualizando a medida que avance en el trabajo.
+Continuando con la segunda actividad del curso de Front-End de MindHub donde se agrego los estilos mediante css basico. Aqui en este nuevo task vamos a agregar nuevas partes a nuestra web pedidas por el cliente.
+
+El repositorio se ira actualizando a medida que avance en el trabajo...
