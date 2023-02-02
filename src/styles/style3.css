@@ -32,20 +32,14 @@ nav {
 
 nav>a {
     text-decoration: none;
+    font-size: 1.2rem;
     color: var(--color1);
-    font-size: 1.3rem;
     font-weight: bolder;
     margin: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.4rem;
     border: 2px solid var(--color1);
     background-color: var(--color2);
     border-radius: 0.7rem;
-}
-
-a:hover {
-    color: var(--color2);
-    background-color: var(--color1);
-    border-radius: 0.5rem;
 }
 
 main {
@@ -84,7 +78,7 @@ footer {
     align-items: center;
     padding: 3rem;
     background-color: var(--back2);
-    border-top: 0.5rem;
+    border-top: 0.3rem;
     border-top-style: solid;
 }
 
@@ -100,12 +94,6 @@ h4 {
     color: var(--color1);
 }
 
-a {
-    color: var(--color2);
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.3rem;
-}
 /* parte del formulario de contacto */
 form {
     display: flex;
@@ -133,10 +121,28 @@ button:hover{
     color: var(--back2);
     background-color: var(--back1);
 }
+svg{
+    margin: 1rem;
+    padding: 0.2rem;
+}
+svg:hover{
+    background-color: var(--color1);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+table{
+    text-align: center;
+}
 .fondo {
     /* position: relative; */
     width: 100%;
     height: 50%;
+}
+
+.nav:hover{
+    color: var(--color2);
+    background-color: var(--color1);
+    border-radius: 0.5rem;
 }
 
 .logo {
@@ -159,6 +165,15 @@ button:hover{
 
 }
 
+.imagen_Inf{
+    object-fit: contain;
+    width: 30%;
+    background-color: var(--color1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    align-self: center;
+}
+
 .contact {
     text-align: center;
     padding-left: 24rem;
@@ -174,7 +189,7 @@ button:hover{
     display: none;
 }
 .articulo{
-    width: 66%;
+    width: 90%;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -186,3 +201,9 @@ button:hover{
 .h3Abot{
     text-align: center;
 }
+/* .redes:hover{
+    background-color: var(--color1);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+} */
