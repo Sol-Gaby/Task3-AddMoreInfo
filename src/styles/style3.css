@@ -191,7 +191,7 @@ ul>li {
 
 .imagen_Inf{
     object-fit: contain;
-    width: 30%;
+    width: 35%;
     background-color: var(--color1);
     padding: 1.5rem;
     border-radius: 0.5rem;
