@@ -131,7 +131,6 @@ svg:hover{
     background-color: var(--color1);
     border-radius: 0.5rem;
     padding: 0.2rem;
-    translate: 0.5rem 0.2rem 0.5rem;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 8px 8px 0 rgb(0,0,0, .4);
     border: 0.1rem solid rgba(0, 0, 0, 0.804);
@@ -209,9 +208,6 @@ ul>li {
     margin: 0%;
     padding: 1rem;
     text-align: center;
-}
-.mod1, .mod2{
-    display: none;
 }
 .articulo{
     width: 90%;
