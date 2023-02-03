@@ -92,6 +92,7 @@ h4 {
     background: var(--color2);
     border-radius: 0.5rem;
     color: var(--color1);
+    border: 0.2rem solid black;
 }
 
 /* parte del formulario de contacto */
@@ -123,15 +124,38 @@ button:hover{
 }
 svg{
     margin: 1rem;
-    padding: 0.2rem;
+    padding: 0.3rem;
+    filter: blur(1px);
 }
 svg:hover{
     background-color: var(--color1);
     border-radius: 0.5rem;
     padding: 0.2rem;
+    translate: 0.5rem 0.2rem 0.5rem;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 8px 0 rgb(0,0,0, .4);
+    border: 0.1rem solid rgba(0, 0, 0, 0.804);
+    filter: none;
 }
 table{
     text-align: center;
+    padding: 1rem;
+}
+td{
+    padding: 1rem;
+    background-color: var(--color1);
+    border-radius: 0.5rem;
+}
+ol{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+ul{
+    width: 70%;
+}
+ul>li {
+    list-style-type: circle;
 }
 .fondo {
     /* position: relative; */
@@ -159,6 +183,7 @@ table{
     object-fit: contain;
     width: 30%;
     background-color: var(--color1);
+    /* ver como queda despues con el back1 y con un padding de 1 o menos */
     padding: 1.5rem;
     border-radius: 0.5rem;
     align-self: center;
@@ -201,9 +226,28 @@ table{
 .h3Abot{
     text-align: center;
 }
-/* .redes:hover{
-    background-color: var(--color1);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
-} */
+.infoS{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+}
+.infoP{
+    text-align: center;
+    margin-top: 0.5rem;    
+}
+.doble{
+    display: flex;
+    justify-content: space-between;
+}
+.subLis{
+    width: 90%;
+    margin: 5%;    
+}
+.h5{
+    border-top-style: solid;
+}
+.subArt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
