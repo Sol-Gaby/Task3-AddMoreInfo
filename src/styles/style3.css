@@ -56,15 +56,7 @@ h2 {
     text-transform: uppercase;
     padding: 1rem;
     text-align: center;
-}
-
-article {
-    display: flex;
-    justify-content: space-around;
-    margin: 2rem;
-    padding: 1rem;
-    background-color: var(--back2);
-    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 article>h3,p {
@@ -141,9 +133,9 @@ table{
     padding: 1rem;
 }
 td{
-    padding: 1rem;
-    background-color: var(--color1);
-    border-radius: 0.5rem;
+    padding: 0.5rem;
+    /* background-color: var(--color1); */
+    /* border-radius: 0.5rem; */
 }
 ol{
     display: flex;    
@@ -176,6 +168,15 @@ ul>li {
     right: 1rem;
     /* background-color: var(--color1); */
     /* border-radius: 1rem; */
+}
+
+.article {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--back2);
+    border-radius: 1rem;
 }
 
 .imagen_A {
@@ -225,15 +226,13 @@ ul>li {
 .infoS{
     font-weight: bolder;
     font-size: 1.2rem;
-    padding-right: 2rem;
 }
 .infoP{
     text-align: center;
-    margin-top: 0.5rem;    
 }
 .doble{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .subLis{
     width: 90%;
@@ -246,4 +245,27 @@ ul>li {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cont{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--back2);
+    border-radius: 1rem;
+}
+.maps{
+    object-fit: contain;
+    background-color: var(--color1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    align-self: center;
+}
+.div{
+    margin: 0%;
 }
