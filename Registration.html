@@ -20,37 +20,174 @@
     <figure><img class="fondo" src="./src/img/design1.jpg" alt="A hockey player of Mighty Ducks Hockey League">
     </figure>
     <header class="header">
-        <!-- encabezado de la pagina -->
-        <h1>Mighty Ducks Hockey League</h1>
+        <div class="contenedor">
+            <!-- encabezado de la pagina -->
+            <h1>Mighty Ducks Hockey League</h1>
+            <!-- botones para navegar en la pagina -->
+            <nav class="navcontS1">
+                <a href="index.html">Home</a>
+                <a href="AboutMDHL.html">About MDHL</a>
+                <a href="Rules.html">Rules</a>
+                <a href="GameInformation.html">Game Info</a>
+                <a href="Registration.html">Form</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+            <figure class="logo"><img src="./src/img/LogoMightyducks-01.png" alt="Mighty Ducks Hockey League logo" class="logo">
+            </figure>
+        </div>
     </header>
-    <figure class="logo"><img src="./src/img/LogoMightyducks-01.png" alt="Mighty Ducks Hockey League logo" class="logo">
-    </figure>
-    <!-- botones para navegar en la pagina -->
-    <nav class="navcontS1">
-        <a href="index.html">Home</a>
-        <a href="AboutMDHL.html">About MDHL</a>
-        <a href="Rules.html">Rules</a>
-        <a href="GameInformation.html">Info</a>
-        <a href="Contact.html">Contact</a>
-    </nav>
     <!-- parte principal de la pagina -->
     <main>
-        <h2>Contact</h2>
-        <article>
-            <!-- imagen -->
-            <img src="./src/img/hockey1.jpg" alt="" class="imagen_A">
-            <!-- articulo en div-->
-            <div class="articulo">
-                <h3 class="formCont">Please email us at:</h3>
-                <p class="formCont"><a href="mdlh@chihockey.org">mdlh@chihockey.org</a></p>
-                <form action="input">
-                    <label for="email">Or send your concern to us at:</label>
-                    <input type="text" name="email" id="email" placeholder="Input text" class="input">
-                    <button type="submit">Send</button>
+        <h2>Registration Form</h2>
+        <section class="formReg">
+                <!-- comienzo de formulario -->
+                <form action="./src/data/show_data.html" method="get">
+                    <p class="infoS">Playe's Information:</p>
+                    <fieldset class="formSec1 formSec">
+                        <!-- <div class="formSec"> -->
+                            <label for="Fname">Player's first name:
+                                <input type="text" name="firstName" id="Fname" placeholder="First Name" class="inputReg">
+                            </label>
+                            <label for="Lname">Last Name:
+                                <input type="text" name="lastName" id="Lname" placeholder="Last Name" class="inputReg">
+                            </label>
+                            <label for="address">Street Address:
+                                <input type="text" name="address" id="address" placeholder="Street Address"
+                                    class="inputReg">
+                            </label>
+    
+                            <label for="city">City:
+                                <input type="text" name="city" id="city" placeholder="City" class="inputReg">
+                            </label>
+    
+                            <label for="zip">Zip Code:
+                                <input type="text" name="zip code" id="zip" placeholder="Zip Code" class="inputReg">
+                            </label>
+                            <label for="date">Birth Date:
+                                <input type="date" name="fecha" id="date" min="1990-01-01" max="2017-12-31"  class="inputReg">
+                            </label>
+                        <!-- </div> -->
+                    </fieldset>
+                    <p class="infoS">Gender:</p>
+                    <fieldset class="formSec">
+                        <!-- <div class="formSec gender"> -->
+                            <label for="F">
+                                <input type="radio" name="gender" id="F" value="female"  class="label_imp">Female
+                            </label>
+                            <label for="M">
+                                <input type="radio" name="gender" id="M" value="male" class="label_imp">Male
+                            </label>
+                        <!-- </div> -->
+                    </fieldset>
+                    <p class="infoS">Grade:</p>
+                    <fieldset class="formSec">
+                        <!-- <div class="formSec"> -->
+                            <label for="pre">
+                                <input type="radio" name="grade" id="pre" value="pre" class="label_imp">Pre-School
+                                
+                            </label>
+                            <label for="1">
+                                <input type="radio" name="grade" id="1" value="1" class="label_imp">1°
+                            </label>
+                            <label for="2">
+                                <input type="radio" name="grade" id="2" value="2" class="label_imp">2°
+                            </label>
+                            <label for="3">
+                                <input type="radio" name="grade" id="3" value="3" class="label_imp">3°
+                            </label>
+                            <label for="4">
+                                <input type="radio" name="grade" id="4" value="4" class="label_imp">4°
+                            </label>
+                            <label for="5">
+                                <input type="radio" name="grade" id="5" value="5" class="label_imp">5°
+                            </label>
+                        <!-- </div> -->
+                    </fieldset>
+                    
+                    <h2>Which elementary school do you live near?</h2>
+                    <p class="infoS">Closest School:</p>
+                    <fieldset class="formSec">
+                        <!-- <div class="formSec2"> -->
+                            <!-- <div class="formSec"> -->
+                                <label for="Aj Katzenmainer">Aj Katzenmainer
+                                    <input type="radio" name="school" id="Aj Katzenmainer" value="Katzenmainer">
+                                </label>
+                                <label for="Greenbay">Greenbay
+                                    <input type="radio" name="school" id="Greenbay" value="Greenbay">
+                                </label>
+                                <label for="howard">Howard A Yeager
+                                    <input type="radio" name="school" id="howard" value="Howard">
+                                </label>
+                                <label for="Marjorie">Marjorie P Hart
+                                    <input type="radio" name="school" id="Marjorie" value="Marjorie">
+                                </label>
+                                <label for="North">North
+                                    <input type="radio" name="school" id="North" value="North">
+                                </label>
+                                <label for="South">South
+                                    <input type="radio" name="school" id="South" value="South">
+                                </label>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </fieldset>
+
+                    <h2>What position(s) do you normally play? (check all that apply)</h2>
+                    <fieldset class="formSec">
+                        <!-- <div class="formSec2"> -->
+                            <!-- <div class="doble"> -->
+                                <label for="foward">Forward
+                                    <input type="checkbox" name="position" id="foward" value="Foward">
+                                </label>
+                                <label for="defense">Defense
+                                    <input type="checkbox" name="position" id="defense" value="Defense">
+                                </label>
+                                <label for="midfield">Midfield
+                                    <input type="checkbox" name="position" id="midfield" value="Midfield">
+                                </label>
+                                <label for="goalkeeper">Goalkeeper
+                                    <input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
+                                </label>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </fieldset>
+
+                    <h2>Uniform Size</h2>
+                    <fieldset class="formSec">
+                        <!-- <div class=""> -->
+                            <!-- <div class="doble"> -->
+                                <select name="uniform" id="uniformZ" class="inputReg">
+                                    <option value="none" selected>Select your size</option>
+                                    <option value="SS">Youth Small</option>
+                                    <option value="SM">Youth Medium</option>
+                                    <option value="SL">Youth Large</option>
+                                    <option value="S">Small</option>
+                                    <option value="M">Medium</option>
+                                    <option value="L">Large</option>
+                                    <option value="XL">Extra-Large</option>
+                                </select>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </fieldset>
+
+                    <h2>Permision to Play</h2>
+                    <fieldset class="formSec">
+                            <!-- imagen -->
+                            <img src="./src/img/design1_2.jpg" alt="" class="imagen_A">
+                                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will
+                                    abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the
+                                    possibility of physical injury associated with hockey and in consideration for the
+                                    “League" accepting the registrant for its hockey programs and activities, I hereby
+                                    release, discharge, and/or otherwise indemnify MDHL, their employees and associated
+                                    personnel and volunteers, including the facilities used for practices and games, against
+                                    any claim by or on behalf of the registrant as a result of the registrant's
+                                    participation in the programand/orbeing transported to or from MDHL sponsored
+                                    activities, which transportation. By signing below, I herebyagree and authorizethe
+                                    above. In addition, by signing below, lalso acknowledge that I have read the
+                                    cancellation policy and agree to its terms. </p>
+                        <button type="submit" class="Send">Send</button>
+                    </fieldset>
                 </form>
-                <p class="formCont">We reply to your email as soon as we can.</p>
-            </div>
-        </article>
+        </section>
     </main>
     <!-- fin del main y comienzo del footer -->
     <footer id="pieContacto">
@@ -58,39 +195,41 @@
         <!-- se podria agregar los icinos de cada red social en vez de los nombres -->
         <div class="redes">
             <a href="#" class="redes"><svg xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24"
-                stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-            </svg></a>
-        <a href="#" class="redes"><svg xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24"
-                stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <rect x="4" y="4" width="16" height="16" rx="4" />
-                <circle cx="12" cy="12" r="3" />
-                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-            </svg></a>
-        <a href="#" class="redes"><svg xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32" viewBox="0 0 24 24"
-                stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-            </svg></a>
-        <a href="#" class="redes"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
-                width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#009988" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                <path
-                    d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-            </svg></a>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="12" cy="12" r="4" />
-                <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
-              </svg></a>
+                    class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg></a>
+            <a href="#" class="redes"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg></a>
+            <a href="#" class="redes"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg></a>
+            <a href="#" class="redes"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-whatsapp" width="32" height="32" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                        d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="32"
+                    height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#009988" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+                </svg></a>
         </div>
         <div class="autor">
             <p>Copyright ©Gabriela Soledad Adorno-2023 | Modelo 3 | Copyright ©MindHub 2023.</p>
