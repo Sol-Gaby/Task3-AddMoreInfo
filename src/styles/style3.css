@@ -26,12 +26,12 @@ h1 {
 
 nav {
     position: absolute;
-    top: 2rem;
-    right: 11rem;
+    top: 1.5rem;
+    right: 9rem;
 }
 
 nav>a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--color1);
     font-weight: bolder;
     margin: 0.5rem;
@@ -89,33 +89,8 @@ h4 {
     border: 0.2rem solid black;
 }
 
-/* parte del formulario de contacto */
-form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+/*svg para redes sociales del footer */
 
-input {
-    margin: 2rem;
-    width: 90%;
-    height: 8rem;
-    border-radius: 0.5rem;
-}
-
-button {
-    width: 5rem;
-    margin: 0.5rem;
-    padding: 0.3rem;
-    font-size: 1rem;
-    color: var(--back1);
-    background-color: var(--color1);
-    border-radius: 0.5rem;
-}
-button:hover{
-    color: var(--back2);
-    background-color: var(--back1);
-}
 svg{
     margin: 1rem;
     padding: 0.3rem;
@@ -130,6 +105,9 @@ svg:hover{
     border: 0.1rem solid rgba(0, 0, 0, 0.804);
     filter: none;
 }
+
+/* tabla de la pagina de game information */
+
 table{
     text-align: center;
     padding: 1rem;
@@ -139,6 +117,9 @@ td{
     /* background-color: var(--color1); */
     /* border-radius: 0.5rem; */
 }
+
+/* listas de reglas de la pagina Rules */
+
 ol{
     display: flex;    
     flex-direction: column;
@@ -150,6 +131,9 @@ ul{
 ul>li {
     list-style-type: circle;
 }
+
+/* ________COMIENZO DE CLASES________   */
+
 .fondo {
     /* position: relative; */
     width: 100%;
@@ -167,7 +151,7 @@ ul>li {
     width: 8rem;
     position: absolute;
     top: 0rem;
-    right: 1rem;
+    right: 0.5rem;
     /* background-color: var(--color1); */
     /* border-radius: 1rem; */
 }
@@ -219,9 +203,33 @@ ul>li {
     flex-direction: column;
     align-items: stretch;
 }
+/* parte del formulario de contacto */
 .formCont{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+.inpCont{
+    margin: 2rem;
+    width: 90%;
+    height: 8rem;
+    border-radius: 0.5rem;
+}
+.Send{
+    width: 5rem;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--back1);
+    background-color: var(--color1);
+    border-radius: 0.5rem;
+}
+.Send:hover{
+    color: var(--back2);
+    background-color: var(--back1);
+}
+/* para lainear p y h del contact y about */
 .h3Abot{
     text-align: center;
 }
@@ -270,4 +278,67 @@ ul>li {
 }
 .div{
     margin: 0%;
+}
+.formReg{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0rem 2rem 2rem 2rem;
+    padding: 1rem;
+    background-color: var(--back2);
+    border-radius: 1rem;
+}
+.formSec{
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    border: 0.2rem solid black;
+    /* background-color: var(--color1); */
+}
+.formSec1{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.formSec2{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.label_imp{
+    margin: 1rem;
+}
+.label_gender{
+    font-weight: bolder;
+    margin: 1rem;
+}
+.inputReg{
+    width: 14rem;
+    margin: 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--color1);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--color2);
+    border: 0.2rem solid black;
+}
+.inputReg:hover{
+    margin: 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--color1);
+    border: 0.2rem solid black;
+    box-shadow: 0 8px 8px 0 rgb(0,0,0, .4);
+}
+option:hover{
+    background-color: var(--back1);
 }
