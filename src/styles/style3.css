@@ -211,9 +211,14 @@ ul>li {
 }
 .inpCont{
     margin: 2rem;
+    padding: 1rem;
     width: 90%;
-    height: 8rem;
     border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--color1);
+    border: 0.2rem solid black;
 }
 .Send{
     width: 5rem;
@@ -341,4 +346,9 @@ ul>li {
 }
 option:hover{
     background-color: var(--back1);
+}
+/* prueva para hacer hover de los mapas */
+.map1:hover{
+    text-decoration: none;
+    /* ver como hacer para que se despliegue el mapa */
 }
